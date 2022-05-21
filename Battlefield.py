@@ -1,14 +1,18 @@
 #import something to use later
-from Fleet import Fleet
-from Herd import Herd
+from Robot import Robot
+from Dinosaur import Dinosaur
+from Weapon import Weapon
 
 #declare battlefield class
+
+robot_one = Robot ("T-1000")
+dino_one = Dinosaur ("T-Rex", 100)
 
 class Battlefield:
 
     def __init__(self):
-        self.fleet = Fleet(" The Bots")
-        self.herd = Herd(" The Rexs")
+        self.Robot = robot_one
+        self.Dinosaur = dino_one
 
 
 
@@ -23,5 +27,8 @@ class Battlefield:
             #subtract health on attack
    
         print ("The game has begun!")
+        print (self.Dinosaur.attack_power)
+        print (self.Robot.name)
+        print (self.Robot.active_weapon.name)
         
         pass
