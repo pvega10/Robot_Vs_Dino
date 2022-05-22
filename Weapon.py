@@ -1,7 +1,10 @@
 class Weapon:
 
-    def __init__(self, name, attack_power):
+    def __init__(self, name):
         self.name = name
-        self.attack_power = int (attack_power)
+        self.attack_power = 10
 
         pass
+
+    def swing (self, dinosaur):
+        dinosaur.health = self.attack_power

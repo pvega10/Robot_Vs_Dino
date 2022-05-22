@@ -7,4 +7,6 @@ bf1 = Battlefield()
 
 #run BF method
 
+bf1.game_intro_scene()
+
 bf1.run_game()
