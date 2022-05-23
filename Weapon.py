@@ -7,4 +7,4 @@ class Weapon:
         pass
 
     def swing (self, dinosaur):
-        dinosaur.health = self.attack_power
+        dinosaur.health -= self.attack_power

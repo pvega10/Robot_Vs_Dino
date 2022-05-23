@@ -31,7 +31,18 @@ class Battlefield:
 
     def run_game (self):
         print ("The game has begun!")
+        print (f"The {robot_one.name} takes a swing at the {dino_one.name} and takes a big chunk out!")
+        weapon_one.swing(dino_one)
+        print (f"The {dino_one.name} is now at {dino_one.health} HP!")
+        dino_one.bite(robot_one)
+        print (f"And the {dino_one.name} bites back! The {robot_one.name} is down to {robot_one.health}")
+        print (f"The {robot_one.name} is now at {robot_one.health} HP!")
+        
+       
 
+    
+            
+        
     
 
             #robo and dino need to fight here
