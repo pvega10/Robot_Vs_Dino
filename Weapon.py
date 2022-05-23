@@ -2,9 +2,9 @@ class Weapon:
 
     def __init__(self, name):
         self.name = name
-        self.attack_power = 10
+        self.attack_power = 30
 
         pass
 
-    def swing (self, dinosaur):
+    def attack (self, dinosaur):
         dinosaur.health -= self.attack_power

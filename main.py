@@ -10,3 +10,5 @@ bf1 = Battlefield()
 bf1.game_intro_scene()
 
 bf1.run_game()
+
+bf1.end_game()
